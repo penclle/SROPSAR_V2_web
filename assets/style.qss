@@ -1,0 +1,49 @@
+QMainWindow { background: #F3F5FA; }
+QMenuBar { background: #F3F5FA; }
+QMenuBar::item { padding: 4px 10px; background: transparent; }
+QMenuBar::item:selected { background: #E7ECFA; border-radius: 6px; }
+
+QLabel#Title {
+  font-size: 18px; font-weight: 700; color: #1B2A57;
+}
+QLabel#Subtitle { font-size: 12px; color: #2C3D7A; }
+QGroupBox {
+  border: 1px solid #C9D2EA; border-radius: 10px;
+  margin-top: 10px; background: #FFFFFF;
+}
+QGroupBox::title {
+  subcontrol-origin: margin; left: 10px;
+  padding: 0 6px; color: #1B2A57; font-weight: 600;
+}
+
+QPushButton {
+  background: #FFFFFF; color: #1B2A57;
+  border: 1px solid #BFC9E6; border-radius: 8px;
+  padding: 6px 12px;
+}
+QPushButton:hover { background: #F1F4FF; }
+QPushButton:checked { background: #E7ECFA; border: 1px solid #7A90D6; }
+QPushButton#Primary {
+  background: #2D6CDF; color: white; border: none;
+}
+QPushButton#Primary:hover { background: #245CC0; }
+
+QLineEdit {
+  background: white; border: 1px solid #BFC9E6; border-radius: 8px;
+  padding: 6px 10px;
+}
+QTableView {
+  background: white; border: 1px solid #C9D2EA; border-radius: 10px;
+  gridline-color: #E8ECF5;
+  selection-background-color: #DCE9FF;
+}
+QHeaderView::section {
+  background: #EEF2FF; padding: 6px; border: none; font-weight: 600;
+}
+QPlainTextEdit {
+  background: #0B1020; color: #D6E1FF;
+  border: 1px solid #1B2340; border-radius: 10px;
+  padding: 10px;
+  font-family: Consolas;
+  font-size: 11px;
+}
