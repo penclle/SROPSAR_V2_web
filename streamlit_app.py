@@ -124,12 +124,12 @@ with tab1:
                 bad_fp = ASSET_DIR / "quality_poor.png"
                 qimg = good_fp if in_ad else bad_fp
                 if qimg.exists():
-                    st.image(str(qimg), caption="Predictive quality", use_container_width=True)
+                    st.image(str(qimg), caption="Predictive quality", width=520)
 
             with colB:
                 png = smiles_to_png(str(res.loc[0, "SMILES"]))
                 if png:
-                    st.image(png, caption="Structure", use_container_width=True)
+                    st.image(png, caption="Structure", width=520)
                 else:
                     st.warning("RDKit drawing failed on server. (Structure image unavailable)")
 
